@@ -1,0 +1,123 @@
+/* start variables */
+:root {
+  --main-color: ;
+}
+/* end variables */
+
+/* start global rules */
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  height: 2000px;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gridy {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  padding: 25px;
+  grid-gap: 20px;
+}
+/* End Global Rules */
+.header {
+  background-color: white;
+  position: fixed;
+}
+.header .container {
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+}
+.container .logo {
+  width: 200px;
+}
+.container .logo img {
+  width: 100px;
+  margin-bottom: -4px;
+  margin-left: 10px;
+}
+.container .logo i {
+  padding: 20px;
+  font-size: 20px;
+}
+.container .search {
+  display: flex;
+  width: 685px;
+  justify-content: center;
+  align-items: center;
+}
+.container .search input[type="text"] {
+  width: 575px;
+  padding: 6px 25px 6px 10px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 2px;
+}
+
+.container .search button {
+  padding: 6px 25px;
+  margin-left: -5px;
+  border: 1px solid rgb(219, 219, 219);
+  background-color: #f8f8f8;
+  border-radius: 2px;
+}
+.container .search .voice i{
+  padding: 7px 10px;
+  border-radius: 50%;
+  background-color: #f8f8f8;
+  font-size: 20px;
+  margin-left: 8px;
+}
+.container .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10px;
+}
+.container .nav .icons {
+  display: flex;
+  justify-content: space-between;
+}
+.container .nav .icons i{
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.container .nav .profile img{
+  width: 35px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.dark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  background-color: white;
+  padding:20px 30px;
+  border-radius: 5px;
+  border: .5px solid #313131;
+  cursor: pointer;
+  text-decoration: none;
+  color: #313131;
+}
+.dark:hover{
+  background-color: #313131;
+  user-select: none;
+  color: white;
+}
+
